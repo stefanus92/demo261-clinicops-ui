@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Dashboard • ClinicOps (AdminLTE-style) v4</title>
+<link rel="stylesheet" href="assets/adminlte.css">
+</head>
+<body>
+<div class="wrapper">
+  <aside class="sidebar">
+    <div class="brand">
+      <div class="logo">C</div>
+      <div>
+        <div class="title">ClinicOps</div>
+        <div class="sub">AdminLTE-style UI Mockup</div>
+      </div>
+    </div>
+    <div class="nav">
+      <div class="section">Phase 1</div>
+<a class="active" href="index.html"><span style="width:18px;display:inline-block">📊</span> Dashboard</a>
+<a class="" href="leads.html"><span style="width:18px;display:inline-block">🧾</span> Leads</a>
+<a class="" href="lead-form.html"><span style="width:18px;display:inline-block">📝</span> Lead Form</a>
+<a class="" href="pricing.html"><span style="width:18px;display:inline-block">🧮</span> Pricing Calculator</a>
+<a class="" href="proposal.html"><span style="width:18px;display:inline-block">📄</span> Proposal Preview</a>
+<a class="" href="settings.html"><span style="width:18px;display:inline-block">⚙️</span> Settings (Templates)</a>
+      <div class="section">Catatan</div>
+      <div style="padding:0 12px 14px 12px" class="muted">
+        Prototype UI untuk presentasi (tanpa backend). Implementasi Yii2:
+        <ul style="margin:8px 0 0 18px; padding:0">
+          <li>Dashboard → charts + KPIs</li>
+          <li>Leads list → GridView + filters</li>
+          <li>Lead form → ActiveForm + validation + upload</li>
+          <li>Pricing → template biaya + kalkulasi + versioning</li>
+          <li>Proposal → HTML preview + export PDF (mPDF)</li>
+        </ul>
+      </div>
+    </div>
+  </aside>
+
+  <main class="content">
+    <div class="navbar">
+      <div style="display:flex;flex-direction:column;gap:2px">
+        <div><b>Phase 1:</b> Sales Lead • Pricing • Project Calculator</div>
+        <div class="muted">Dashboard ringkas untuk manajemen pusat klinik (contoh tampilan).</div>
+      </div>
+      <div style="display:flex;align-items:center;gap:10px">
+        <div class="search">
+          🔎 <input placeholder="Cari perusahaan / lokasi / PIC…">
+        </div>
+        <div class="toolbar">
+          <a class="btn btn-outline" href="leads.html">Open Leads</a>
+          <a class="btn btn-primary" href="lead-form.html">Add Lead</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      
+<div class="row">
+  <div class="col small-box bg-info">
+    <h3>128</h3>
+    <p>Total Leads</p>
+    <div class="meta">Aktif: 121 • Archived: 7</div>
+  </div>
+  <div class="col small-box bg-success">
+    <h3>Rp 8,4 M</h3>
+    <p>Pipeline Value</p>
+    <div class="meta">Weighted: Rp 4,9 M (by stage)</div>
+  </div>
+  <div class="col small-box bg-warning">
+    <h3>9</h3>
+    <p>Proposal Due (≤ 7 hari)</p>
+    <div class="meta">2 overdue • 3 draft</div>
+  </div>
+  <div class="col small-box bg-danger">
+    <h3>4</h3>
+    <p>Won (bulan ini)</p>
+    <div class="meta">Avg cycle: 18 hari</div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col">
+    <div class="card">
+      <div class="card-header">
+        <span>Pipeline Overview</span>
+        <span class="badge badge-info">Funnel + next action</span>
+      </div>
+      <div class="card-body">
+        <table class="table">
+          <thead>
+            <tr><th>Stage</th><th>Count</th><th>Prob.</th><th>Est. Value</th><th>Weighted</th><th>Next Action</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>New</td><td>42</td><td>10%</td><td>Rp 1,9 M</td><td>Rp 190 jt</td><td>Assign owner + initial call</td></tr>
+            <tr><td>Contacted</td><td>31</td><td>30%</td><td>Rp 2,1 M</td><td>Rp 630 jt</td><td>Schedule survey / gather requirements</td></tr>
+            <tr><td>Survey Lokasi</td><td>19</td><td>50%</td><td>Rp 1,6 M</td><td>Rp 800 jt</td><td>Confirm room size + upload photos</td></tr>
+            <tr><td>Pricing Dikirim</td><td>14</td><td>60%</td><td>Rp 2,0 M</td><td>Rp 1,2 M</td><td>Follow-up + revise template if needed</td></tr>
+            <tr><td>Negosiasi</td><td>9</td><td>80%</td><td>Rp 0,8 M</td><td>Rp 640 jt</td><td>Finalize SLA & timeline</td></tr>
+            <tr><td><b>Won</b></td><td><b>4</b></td><td>100%</td><td><b>Rp 1,0 M</b></td><td><b>Rp 1,0 M</b></td><td>Kickoff project + deployment plan</td></tr>
+          </tbody>
+        </table>
+        <div class="muted" style="margin-top:8px">
+          Di Yii2, “Weighted” dihitung dari stage probability dan nilai pricing per lead.
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <span>Leads Due Soon</span>
+        <span class="badge badge-warning">Butuh follow-up</span>
+      </div>
+      <div class="card-body">
+        <table class="table">
+          <thead><tr><th>Company</th><th>Lokasi</th><th>Kategori</th><th>Stage</th><th>Proposal Due</th><th>Owner</th><th>Action</th></tr></thead>
+          <tbody>
+            <tr>
+              <td><b>PT Sinar Abadi</b></td><td>Bekasi</td><td><span class="badge badge-info">BPJS</span></td>
+              <td><span class="badge badge-warning">Pricing Dikirim</span></td><td>2026-01-05</td><td>Rina</td><td>Call + revise pricing</td>
+            </tr>
+            <tr>
+              <td><b>Office Tower X</b></td><td>Jakarta</td><td><span class="badge badge-success">Elite</span></td>
+              <td><span class="badge badge-warning">Negosiasi</span></td><td>2026-01-12</td><td>Budi</td><td>Finalize SLA</td>
+            </tr>
+            <tr>
+              <td><b>PT Logistik Maju</b></td><td>Semarang</td><td><span class="badge">Umum</span></td>
+              <td><span class="badge badge-info">Contacted</span></td><td>2026-01-20</td><td>Rina</td><td>Schedule survey</td>
+            </tr>
+          </tbody>
+        </table>
+        <div style="margin-top:10px;text-align:right">
+          <a class="btn btn-outline" href="leads.html">View all leads</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="col">
+    <div class="card">
+      <div class="card-header">
+        <span>Kategori Klinik (Mix)</span>
+        <span class="badge">Distribution</span>
+      </div>
+      <div class="card-body">
+        <table class="table">
+          <thead><tr><th>Kategori</th><th>Leads</th><th>Avg Deal</th><th>Notes</th></tr></thead>
+          <tbody>
+            <tr><td>Klinik Umum</td><td>78</td><td>Rp 120 jt</td><td>Sekolah/kantor/pabrik</td></tr>
+            <tr><td>Klinik BPJS</td><td>34</td><td>Rp 420 jt</td><td>Standar + integrasi</td></tr>
+            <tr><td>Klinik Elite</td><td>16</td><td>Rp 1,2 M</td><td>Premium experience</td></tr>
+          </tbody>
+        </table>
+
+        <div class="card" style="margin-top:12px">
+          <div class="card-header">Simple Chart (bar)</div>
+          <div class="card-body">
+            <div class="muted">Leads per kategori</div>
+            <div style="margin-top:8px">
+              <div class="muted">Umum (78)</div>
+              <div class="progress"><span style="width:78%"></span></div>
+              <div class="muted" style="margin-top:8px">BPJS (34)</div>
+              <div class="progress"><span style="width:34%"></span></div>
+              <div class="muted" style="margin-top:8px">Elite (16)</div>
+              <div class="progress"><span style="width:16%"></span></div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <span>Estimator Snapshot</span>
+        <span class="badge badge-success">Pricing</span>
+      </div>
+      <div class="card-body">
+        <div class="muted">Contoh lead terpilih: PT Sinar Abadi (BPJS, 3 site, 150m²/site, 24/7, 12 bulan)</div>
+        <table class="table" style="margin-top:10px">
+          <thead><tr><th>Metric</th><th>Value</th></tr></thead>
+          <tbody>
+            <tr><td>Setup Cost</td><td>Rp 365 jt</td></tr>
+            <tr><td>Recurring / bulan</td><td>Rp 240 jt</td></tr>
+            <tr><td>Total Kontrak</td><td><b>Rp 3,245 M</b></td></tr>
+            <tr><td>Weighted (60%)</td><td>Rp 1,947 M</td></tr>
+          </tbody>
+        </table>
+        <div style="margin-top:10px;display:flex;gap:8px;justify-content:flex-end">
+          <a class="btn btn-outline" href="pricing.html">Open Pricing</a>
+          <a class="btn btn-primary" href="proposal.html">Proposal</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <span>Ops Reminders</span>
+        <span class="badge badge-danger">Attention</span>
+      </div>
+      <div class="card-body">
+        <table class="table">
+          <thead><tr><th>Item</th><th>Count</th><th>Notes</th></tr></thead>
+          <tbody>
+            <tr><td>Overdue proposal</td><td>2</td><td>Need immediate follow-up</td></tr>
+            <tr><td>Missing attachments</td><td>5</td><td>TOR / layout belum diupload</td></tr>
+            <tr><td>Survey pending schedule</td><td>7</td><td>Assign slot minggu ini</td></tr>
+          </tbody>
+        </table>
+        <div class="muted" style="margin-top:8px">
+          Di implementasi Yii2: reminders berasal dari rule engine sederhana (deadline, missing docs, stage aging).
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+      <div class="footer">© 2026 ClinicOps • Prototype UI (no backend)</div>
+    </div>
+  </main>
+</div>
+</body>
+</html>

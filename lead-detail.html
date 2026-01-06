@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Lead Detail • ClinicOps</title>
+<link rel="stylesheet" href="assets/adminlte.css">
+</head>
+<body>
+<div class="wrapper">
+  <aside class="sidebar">
+    <div class="brand">
+      <div class="logo">C</div>
+      <div>
+        <div class="title">ClinicOps</div>
+        <div class="sub">AdminLTE-style UI Mockup</div>
+      </div>
+    </div>
+    <div class="nav">
+      <div class="section">Phase 1</div>
+<a class="" href="index.html"><span style="width:18px;display:inline-block">📊</span> Dashboard</a>
+<a class="" href="leads.html"><span style="width:18px;display:inline-block">🧾</span> Leads</a>
+<a class="active" href="lead-detail.html"><span style="width:18px;display:inline-block">🔎</span> Lead Detail</a>
+<a class="" href="lead-form.html"><span style="width:18px;display:inline-block">📝</span> Lead Form</a>
+<a class="" href="pricing.html"><span style="width:18px;display:inline-block">🧮</span> Pricing Calculator</a>
+<a class="" href="proposal.html"><span style="width:18px;display:inline-block">📄</span> Proposal Preview</a>
+<a class="" href="settings.html"><span style="width:18px;display:inline-block">⚙️</span> Settings (Templates)</a>
+      <div class="section">Catatan</div>
+      <div style="padding:0 12px 14px 12px" class="muted">
+        Prototype UI untuk presentasi. Implementasi Yii2:
+        <ul style="margin:8px 0 0 18px; padding:0">
+          <li>Leads Grid → GridView + Pjax</li>
+          <li>Lead Form → ActiveForm + validation</li>
+          <li>Pricing Template → CRUD + formula engine</li>
+          <li>Export Proposal → mPDF</li>
+        </ul>
+      </div>
+    </div>
+  </aside>
+
+  <main class="content">
+    <div class="navbar">
+      <div style="display:flex;flex-direction:column;gap:2px">
+        <div><b>Phase 1:</b> Sales Lead • Pricing • Project Calculator</div>
+        <div class="muted">Demo UI • validasi alur sebelum coding.</div>
+      </div>
+      <div style="display:flex;align-items:center;gap:10px">
+        <div class="search">
+          🔎 <input placeholder="Cari perusahaan / lokasi / PIC…">
+        </div>
+        <div class="toolbar">
+          <button class="btn btn-outline">⬇️ Export</button>
+          <a class="btn btn-outline" href="lead-form.html">➕ Add Lead</a>
+          <a class="btn btn-primary" href="pricing.html">🧮 Pricing</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      
+<div class="row">
+  <div class="col">
+    <div class="card">
+      <div class="card-header">
+        <span>Lead Detail • PT Sinar Abadi</span>
+        <span>
+          <span class="badge badge-warning">Pricing Sent</span>
+          <span class="badge badge-info">BPJS</span>
+        </span>
+      </div>
+      <div class="card-body">
+        <div class="toolbar" style="margin-bottom:10px">
+          <a class="btn btn-outline" href="leads.html">← Back</a>
+          <button class="btn btn-outline">🧑‍💼 Assign Owner</button>
+          <button class="btn btn-outline">🏷️ Update Stage</button>
+          <a class="btn btn-primary" href="pricing.html">🧮 Open Pricing</a>
+          <a class="btn btn-success" href="proposal.html">📄 Proposal</a>
+        </div>
+
+        <div class="grid3">
+          <div class="card">
+            <div class="card-header"><span>Client Info</span><span class="badge badge-muted">Basic</span></div>
+            <div class="card-body">
+              <div><b>Industry:</b> Manufacturing</div>
+              <div><b>Locations:</b> Bekasi, Cikarang (3 sites)</div>
+              <div><b>Employees:</b> 1.200</div>
+              <div><b>MCU Type:</b> Comprehensive</div>
+              <div><b>Health Coverage:</b> BPJS / Mixed</div>
+              <div class="muted" style="margin-top:6px">Deployment target: 2026-02-01</div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-header"><span>Contact</span><span class="badge badge-muted">PIC</span></div>
+            <div class="card-body">
+              <div><b>Name:</b> (PIC Name)</div>
+              <div><b>Role:</b> HSE Manager</div>
+              <div><b>Email:</b> pic@company.com</div>
+              <div><b>Phone:</b> +62 8xx</div>
+              <div class="muted" style="margin-top:6px">Internal champion: Yes</div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-header"><span>Lead Score</span><span class="badge badge-success">Qualified</span></div>
+            <div class="card-body">
+              <div style="display:flex;justify-content:space-between"><b>Total Score</b><b>78/100</b></div>
+              <div class="progress" style="margin-top:8px"><span style="width:78%"></span></div>
+              <div class="muted" style="margin-top:8px">
+                Alignment: 3/5 • Budget: OK • Timeline: Medium • Multi-site: Yes
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card" style="margin-top:12px">
+          <div class="card-header"><span>Manpower & Services</span><span class="badge badge-info">Driver biaya</span></div>
+          <div class="card-body">
+            <div class="grid2">
+              <div>
+                <div class="pill">
+                  <span>On-site clinic: Yes</span>
+                  <span>Shift: 24 jam</span>
+                  <span>Doctors: 2</span>
+                  <span>Nurses: 6</span>
+                  <span>Other: 1 admin</span>
+                </div>
+                <div class="muted" style="margin-top:8px">Kualifikasi: ACLS / HIPERKES (contoh)</div>
+              </div>
+              <div>
+                <table class="table">
+                  <thead><tr><th>Budget</th><th class="right">Nilai</th></tr></thead>
+                  <tbody>
+                    <tr><td>Manpower / bulan</td><td class="right">Rp 150 jt</td></tr>
+                    <tr><td>Drug supply / bulan</td><td class="right">Rp 50 jt</td></tr>
+                    <tr><td>OH services / bulan</td><td class="right">Rp 40 jt</td></tr>
+                    <tr><td>MCU budget</td><td class="right">Rp 25 jt</td></tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card" style="margin-top:12px">
+          <div class="card-header"><span>Notes & Attachments</span><span class="badge">Docs</span></div>
+          <div class="card-body">
+            <div class="muted">• TOR.pdf • Floorplan.jpg • Email thread (placeholder)</div>
+            <div class="hr"></div>
+            <div class="muted">Additional comments: butuh go-live sebelum audit tahunan.</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+      <div class="footer">© 2026 ClinicOps • Prototype UI (no backend)</div>
+    </div>
+  </main>
+</div>
+</body>
+</html>

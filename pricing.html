@@ -1,0 +1,253 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Pricing • ClinicOps</title>
+<link rel="stylesheet" href="assets/adminlte.css">
+</head>
+<body>
+<div class="wrapper">
+  <aside class="sidebar">
+    <div class="brand">
+      <div class="logo">C</div>
+      <div>
+        <div class="title">ClinicOps</div>
+        <div class="sub">AdminLTE-style UI Mockup</div>
+      </div>
+    </div>
+    <div class="nav">
+      <div class="section">Phase 1</div>
+<a class="" href="index.html"><span style="width:18px;display:inline-block">📊</span> Dashboard</a>
+<a class="" href="leads.html"><span style="width:18px;display:inline-block">🧾</span> Leads</a>
+<a class="" href="lead-form.html"><span style="width:18px;display:inline-block">📝</span> Lead Form</a>
+<a class="active" href="pricing.html"><span style="width:18px;display:inline-block">🧮</span> Pricing Calculator</a>
+<a class="" href="proposal.html"><span style="width:18px;display:inline-block">📄</span> Proposal Preview</a>
+<a class="" href="settings.html"><span style="width:18px;display:inline-block">⚙️</span> Settings (Templates)</a>
+      <div class="section">Catatan</div>
+      <div style="padding:0 12px 14px 12px" class="muted">
+        Prototype UI untuk presentasi (tanpa backend). Implementasi Yii2:
+        <ul style="margin:8px 0 0 18px; padding:0">
+          <li>Leads list → GridView + filters</li>
+          <li>Lead form → ActiveForm + validation + upload</li>
+          <li>Pricing → template biaya + kalkulasi + audit log</li>
+          <li>Proposal → HTML preview + export PDF (mPDF)</li>
+        </ul>
+      </div>
+    </div>
+  </aside>
+
+  <main class="content">
+    <div class="navbar">
+      <div style="display:flex;flex-direction:column;gap:2px">
+        <div><b>Phase 1:</b> Sales Lead • Pricing • Project Calculator</div>
+        <div class="muted">Demo UI • validasi alur & kebutuhan sebelum coding.</div>
+      </div>
+      <div style="display:flex;align-items:center;gap:10px">
+        <div class="search">
+          🔎 <input placeholder="Cari perusahaan / lokasi / PIC…">
+        </div>
+        <div class="toolbar">
+          <button class="btn btn-outline">Export</button>
+          <button class="btn btn-primary">Add Lead</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      
+<div class="card">
+  <div class="card-header">
+    <span>Pricing & Project Calculator (Realistic)</span>
+    <span class="badge badge-success">Template-based pricing</span>
+  </div>
+  <div class="card-body">
+    <div class="row">
+      <div class="col">
+        <div class="card" style="margin-bottom:0">
+          <div class="card-header">1) Input</div>
+          <div class="card-body">
+            <div class="row">
+              <div class="col">
+                <div class="muted">Lead</div>
+                <select>
+                  <option selected>PT Sinar Abadi • Bekasi</option>
+                  <option>Office Tower X • Jakarta</option>
+                  <option>SMA Harapan • Surabaya</option>
+                </select>
+              </div>
+              <div class="col">
+                <div class="muted">Clinic Category</div>
+                <select>
+                  <option>Umum</option>
+                  <option selected>BPJS</option>
+                  <option>Elite</option>
+                </select>
+              </div>
+              <div class="col">
+                <div class="muted">Pricing Template</div>
+                <select>
+                  <option>Basic - School/Office</option>
+                  <option selected>BPJS Standard</option>
+                  <option>Elite Premium</option>
+                </select>
+              </div>
+              <div class="col">
+                <div class="muted">Contract (months)</div>
+                <input value="12">
+              </div>
+            </div>
+
+            <div class="row" style="margin-top:10px">
+              <div class="col">
+                <div class="muted">Site Count</div>
+                <input value="3">
+              </div>
+              <div class="col">
+                <div class="muted">Area per Site (m²)</div>
+                <input value="150">
+              </div>
+              <div class="col">
+                <div class="muted">Shift</div>
+                <select><option>1 Shift</option><option>2 Shift</option><option selected>24/7</option></select>
+              </div>
+              <div class="col">
+                <div class="muted">Probability (Stage)</div>
+                <select><option>10%</option><option>30%</option><option selected>60%</option><option>90%</option></select>
+              </div>
+            </div>
+
+            <div class="card" style="margin-top:12px">
+              <div class="card-header">Facilities (Checklist)</div>
+              <div class="card-body">
+                <div class="row">
+                  <div class="col"><label><input type="checkbox" checked> Ruang Pemeriksaan</label></div>
+                  <div class="col"><label><input type="checkbox" checked> Ruang Tindakan</label></div>
+                  <div class="col"><label><input type="checkbox" checked> Farmasi</label></div>
+                  <div class="col"><label><input type="checkbox" checked> Lab Ringan</label></div>
+                </div>
+                <div class="row" style="margin-top:6px">
+                  <div class="col"><label><input type="checkbox" checked> Sistem Antrian</label></div>
+                  <div class="col"><label><input type="checkbox" checked> Integrasi BPJS</label></div>
+                  <div class="col"><label><input type="checkbox"> Lounge Premium</label></div>
+                  <div class="col"><label><input type="checkbox"> Branding Premium</label></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="card" style="margin-top:12px">
+              <div class="card-header">Manpower & Operating</div>
+              <div class="card-body">
+                <div class="row">
+                  <div class="col"><div class="muted">Doctors</div><input value="2"></div>
+                  <div class="col"><div class="muted">Nurses</div><input value="6"></div>
+                  <div class="col"><div class="muted">Other (Admin/EMT)</div><input value="1"></div>
+                  <div class="col"><div class="muted">Manpower Budget (Rp/bln)</div><input value="150000000"></div>
+                </div>
+                <div class="row" style="margin-top:10px">
+                  <div class="col"><div class="muted">Drug Supply?</div><select><option selected>Yes</option><option>No</option></select></div>
+                  <div class="col"><div class="muted">Drug Budget (Rp/bln)</div><input value="50000000"></div>
+                  <div class="col"><div class="muted">OH Budget (Rp/bln)</div><input value="40000000"></div>
+                  <div class="col"><div class="muted">MCU Budget (Rp)</div><input value="25000000"></div>
+                </div>
+              </div>
+            </div>
+
+            <div style="margin-top:12px;display:flex;gap:8px;justify-content:flex-end">
+              <a class="btn btn-outline" href="lead-form.html">Back to Lead</a>
+              <button class="btn btn-success">Calculate</button>
+              <a class="btn btn-primary" href="proposal.html">Generate Proposal</a>
+            </div>
+            <div class="muted" style="margin-top:8px">
+              Di Yii2: kalkulasi akan menggunakan template (biaya/m², paket alat, margin, tax) dan tersimpan sebagai versioning (pricing history).
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card" style="margin-bottom:0">
+          <div class="card-header">2) Output (Breakdown)</div>
+          <div class="card-body">
+            <div class="row">
+              <div class="col">
+                <div class="small-box bg-info" style="padding:12px">
+                  <h3 style="font-size:20px">Rp 365 jt</h3>
+                  <p>Setup Cost (sekali)</p>
+                  <div class="meta">Renovasi + furniture + alat + IT</div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="small-box bg-success" style="padding:12px">
+                  <h3 style="font-size:20px">Rp 240 jt</h3>
+                  <p>Recurring / bulan</p>
+                  <div class="meta">SDM + Obat + OH</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="card" style="margin-top:12px">
+              <div class="card-header">Setup Breakdown (per site)</div>
+              <div class="card-body">
+                <table class="table">
+                  <thead><tr><th>Komponen</th><th>Formula</th><th>Nilai</th></tr></thead>
+                  <tbody>
+                    <tr><td>Renovasi</td><td>150m² × Rp 1.200.000</td><td>Rp 180 jt</td></tr>
+                    <tr><td>Furniture</td><td>Paket BPJS Standard</td><td>Rp 40 jt</td></tr>
+                    <tr><td>Alat Medis</td><td>Paket BPJS</td><td>Rp 120 jt</td></tr>
+                    <tr><td>IT & Software</td><td>Antrian + Integrasi BPJS</td><td>Rp 15 jt</td></tr>
+                    <tr><td>Perizinan & Admin</td><td>Fixed</td><td>Rp 10 jt</td></tr>
+                  </tbody>
+                </table>
+                <div class="muted" style="margin-top:8px">Angka di atas contoh. Di Yii2 dihitung dari template + item options.</div>
+              </div>
+            </div>
+
+            <div class="card" style="margin-top:12px">
+              <div class="card-header">Recurring Breakdown (per bulan)</div>
+              <div class="card-body">
+                <table class="table">
+                  <thead><tr><th>Komponen</th><th>Nilai</th><th>Notes</th></tr></thead>
+                  <tbody>
+                    <tr><td>Manpower</td><td>Rp 150 jt</td><td>2 dokter, 6 perawat, 1 admin</td></tr>
+                    <tr><td>Drug Supply</td><td>Rp 50 jt</td><td>Fast-moving + generic</td></tr>
+                    <tr><td>OH Services</td><td>Rp 40 jt</td><td>Quarterly program</td></tr>
+                    <tr><td>Other Ops</td><td>Rp 0</td><td>Optional (ambulance, call center)</td></tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+            <div class="card" style="margin-top:12px">
+              <div class="card-header">Total Contract</div>
+              <div class="card-body">
+                <table class="table">
+                  <thead><tr><th>Item</th><th>Nilai</th></tr></thead>
+                  <tbody>
+                    <tr><td>Setup (sekali)</td><td>Rp 365 jt</td></tr>
+                    <tr><td>Recurring (12 bulan)</td><td>Rp 240 jt × 12 = Rp 2.880 M</td></tr>
+                    <tr><td><b>Total</b></td><td><b>Rp 3.245 M</b></td></tr>
+                    <tr><td>Probability-weighted forecast (60%)</td><td>Rp 1.947 M</td></tr>
+                  </tbody>
+                </table>
+                <div style="margin-top:10px;display:flex;gap:8px;justify-content:flex-end">
+                  <a class="btn btn-outline" href="leads.html">Back to Leads</a>
+                  <a class="btn btn-primary" href="proposal.html">Preview Proposal</a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+      <div class="footer">© 2026 ClinicOps • Prototype UI (no backend)</div>
+    </div>
+  </main>
+</div>
+</body>
+</html>

@@ -1,0 +1,351 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Lead Form • ClinicOps</title>
+<link rel="stylesheet" href="assets/adminlte.css">
+</head>
+<body>
+<div class="wrapper">
+  <aside class="sidebar">
+    <div class="brand">
+      <div class="logo">C</div>
+      <div>
+        <div class="title">ClinicOps</div>
+        <div class="sub">AdminLTE-style UI Mockup</div>
+      </div>
+    </div>
+    <div class="nav">
+      <div class="section">Phase 1</div>
+<a class="" href="index.html"><span style="width:18px;display:inline-block">📊</span> Dashboard</a>
+<a class="" href="leads.html"><span style="width:18px;display:inline-block">🧾</span> Leads</a>
+<a class="active" href="lead-form.html"><span style="width:18px;display:inline-block">📝</span> Lead Form</a>
+<a class="" href="pricing.html"><span style="width:18px;display:inline-block">🧮</span> Pricing Calculator</a>
+<a class="" href="proposal.html"><span style="width:18px;display:inline-block">📄</span> Proposal Preview</a>
+<a class="" href="settings.html"><span style="width:18px;display:inline-block">⚙️</span> Settings (Templates)</a>
+      <div class="section">Catatan</div>
+      <div style="padding:0 12px 14px 12px" class="muted">
+        Prototype UI untuk presentasi (tanpa backend). Implementasi Yii2:
+        <ul style="margin:8px 0 0 18px; padding:0">
+          <li>Leads list → GridView + filters</li>
+          <li>Lead form → ActiveForm + validation + upload</li>
+          <li>Pricing → template biaya + kalkulasi + audit log</li>
+          <li>Proposal → HTML preview + export PDF (mPDF)</li>
+        </ul>
+      </div>
+    </div>
+  </aside>
+
+  <main class="content">
+    <div class="navbar">
+      <div style="display:flex;flex-direction:column;gap:2px">
+        <div><b>Phase 1:</b> Sales Lead • Pricing • Project Calculator</div>
+        <div class="muted">Demo UI • validasi alur & kebutuhan sebelum coding.</div>
+      </div>
+      <div style="display:flex;align-items:center;gap:10px">
+        <div class="search">
+          🔎 <input placeholder="Cari perusahaan / lokasi / PIC…">
+        </div>
+        <div class="toolbar">
+          <button class="btn btn-outline">Export</button>
+          <button class="btn btn-primary">Add Lead</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      
+<div class="card">
+  <div class="card-header">
+    <span>Lead Collection Form (Lengkap)</span>
+    <span class="badge badge-info">Sesuai template intake</span>
+  </div>
+  <div class="card-body">
+
+    <div class="card" style="margin-bottom:12px">
+      <div class="card-header">A. Basic Lead Information</div>
+      <div class="card-body">
+        <div class="row">
+          <div class="col">
+            <div class="muted">Date of Inquiry</div>
+            <input type="date" value="2025-12-16">
+          </div>
+          <div class="col">
+            <div class="muted">Proposal Submission Deadline</div>
+            <input type="date" value="2026-01-05">
+          </div>
+          <div class="col">
+            <div class="muted">Deployment Deadline</div>
+            <input type="date" value="2026-02-01">
+          </div>
+          <div class="col">
+            <div class="muted">Period of Contract</div>
+            <input value="12 bulan">
+          </div>
+        </div>
+
+        <div class="row" style="margin-top:10px">
+          <div class="col">
+            <div class="muted">Company Name</div>
+            <input value="PT Sinar Abadi">
+          </div>
+          <div class="col">
+            <div class="muted">Industry Sector</div>
+            <input value="Manufacturing">
+          </div>
+          <div class="col">
+            <div class="muted">Industry Category</div>
+            <select>
+              <option>Low</option><option selected>Medium</option><option>High</option>
+            </select>
+          </div>
+          <div class="col">
+            <div class="muted">Location(s) of Operation</div>
+            <input value="Bekasi, Cikarang">
+          </div>
+        </div>
+
+        <div class="row" style="margin-top:10px">
+          <div class="col">
+            <div class="muted">Number of Employees</div>
+            <input value="1200">
+          </div>
+          <div class="col">
+            <div class="muted">Site Count</div>
+            <input value="3">
+          </div>
+          <div class="col">
+            <div class="muted">MCU Type</div>
+            <select>
+              <option selected>Basic</option><option>Comprehensive</option><option>Custom</option>
+            </select>
+          </div>
+          <div class="col">
+            <div class="muted">Health Coverage</div>
+            <select>
+              <option>Private</option><option selected>BPJS</option><option>Mixed</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="row" style="margin-top:10px">
+          <div class="col">
+            <div class="muted">Brand Ownership</div>
+            <select><option selected>Provider Brand</option><option>Client Brand</option></select>
+          </div>
+          <div class="col">
+            <div class="muted">Brand Perception</div>
+            <select><option>Basic</option><option selected>Standard</option><option>Premium</option></select>
+          </div>
+          <div class="col">
+            <div class="muted">Strategic Alignment</div>
+            <select><option>1</option><option>2</option><option selected>3</option><option>4</option><option>5</option></select>
+          </div>
+          <div class="col">
+            <div class="muted">Clinic Category (internal)</div>
+            <select><option>Umum</option><option selected>BPJS</option><option>Elite</option></select>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card" style="margin-bottom:12px">
+      <div class="card-header">B. Contact Information</div>
+      <div class="card-body">
+        <div class="row">
+          <div class="col">
+            <div class="muted">Contact Person</div>
+            <input value="Agus Santoso">
+          </div>
+          <div class="col">
+            <div class="muted">Contact Role</div>
+            <input value="HR Manager">
+          </div>
+          <div class="col">
+            <div class="muted">Contact Email</div>
+            <input value="agus@sinarabadi.co.id">
+          </div>
+          <div class="col">
+            <div class="muted">Contact Phone</div>
+            <input value="+62 812-xxxx-xxxx">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card" style="margin-bottom:12px">
+      <div class="card-header">C. Clinic Manpower Needs</div>
+      <div class="card-body">
+        <div class="row">
+          <div class="col">
+            <div class="muted">Requires On-site Clinic?</div>
+            <select><option selected>Yes</option><option>No</option></select>
+          </div>
+          <div class="col">
+            <div class="muted">Shift Requirements</div>
+            <select><option>1 Shift</option><option>2 Shift</option><option selected>24/7</option></select>
+          </div>
+          <div class="col">
+            <div class="muted">Type of Manpower</div>
+            <input value="Dokter, Perawat, Admin">
+          </div>
+          <div class="col">
+            <div class="muted">Manpower Qualification</div>
+            <input value="ACLS (dokter), EMT (opsional)">
+          </div>
+        </div>
+
+        <div class="row" style="margin-top:10px">
+          <div class="col">
+            <div class="muted">Number of Doctors</div>
+            <input value="2">
+          </div>
+          <div class="col">
+            <div class="muted">Number of Nurses</div>
+            <input value="6">
+          </div>
+          <div class="col">
+            <div class="muted">Other Manpower</div>
+            <input value="1 admin">
+          </div>
+          <div class="col">
+            <div class="muted">Number of Personnel</div>
+            <input value="9">
+          </div>
+        </div>
+
+        <div class="row" style="margin-top:10px">
+          <div class="col">
+            <div class="muted">Clinic Manpower Budget (Rp/bln)</div>
+            <input value="150000000">
+          </div>
+          <div class="col">
+            <div class="muted">Notes (manpower)</div>
+            <input value="Prefer 1 dokter senior untuk jam sibuk">
+          </div>
+          <div class="col">
+            <div class="muted">Requires On-site Clinic? (detail)</div>
+            <input value="Ruang 150m² per site">
+          </div>
+          <div class="col">
+            <div class="muted">Clinic Setup Preference</div>
+            <select><option>Basic</option><option selected>Standard</option><option>Premium</option></select>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card" style="margin-bottom:12px">
+      <div class="card-header">D. Drugs & Consumables</div>
+      <div class="card-body">
+        <div class="row">
+          <div class="col">
+            <div class="muted">Requires Drug Supply?</div>
+            <select><option selected>Yes</option><option>No</option></select>
+          </div>
+          <div class="col">
+            <div class="muted">Estimated Monthly Drug Budget</div>
+            <input value="50000000">
+          </div>
+          <div class="col">
+            <div class="muted">MCU Budget</div>
+            <input value="25000000">
+          </div>
+          <div class="col">
+            <div class="muted">Consumables Provided By</div>
+            <select><option selected>Provider</option><option>Client</option><option>Mixed</option></select>
+          </div>
+        </div>
+        <div class="row" style="margin-top:10px">
+          <div class="col">
+            <div class="muted">Notes (drugs/consumables)</div>
+            <input value="Prefer generic + fast-moving items">
+          </div>
+          <div class="col">
+            <div class="muted">Attachment (TOR / layout / photos)</div>
+            <input type="file">
+          </div>
+          <div class="col">
+            <div class="muted">Attachment (budget doc)</div>
+            <input type="file">
+          </div>
+          <div class="col">
+            <div class="muted">Attachment (MCU spec)</div>
+            <input type="file">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card" style="margin-bottom:12px">
+      <div class="card-header">E. Occupational Health Services (OH)</div>
+      <div class="card-body">
+        <div class="row">
+          <div class="col">
+            <div class="muted">Required OH Services</div>
+            <input value="Hearing test, spirometry, counseling">
+          </div>
+          <div class="col">
+            <div class="muted">Frequency of Services</div>
+            <select><option>Monthly</option><option selected>Quarterly</option><option>Yearly</option></select>
+          </div>
+          <div class="col">
+            <div class="muted">Employees per Service</div>
+            <input value="300">
+          </div>
+          <div class="col">
+            <div class="muted">OH Services Budget (Rp/bln)</div>
+            <input value="40000000">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card" style="margin-bottom:12px">
+      <div class="card-header">F. Lead Qualification & Scoring</div>
+      <div class="card-body">
+        <div class="row">
+          <div class="col">
+            <div class="muted">Internal Champion Present?</div>
+            <select><option selected>Yes</option><option>No</option></select>
+          </div>
+          <div class="col">
+            <div class="muted">Budget Fit</div>
+            <select><option>Low</option><option selected>Medium</option><option>High</option></select>
+          </div>
+          <div class="col">
+            <div class="muted">Urgency (Deployment)</div>
+            <select><option>Low</option><option selected>Medium</option><option>High</option></select>
+          </div>
+          <div class="col">
+            <div class="muted">System Calculated Score</div>
+            <input value="82 (Qualified)" readonly>
+          </div>
+        </div>
+        <div class="muted" style="margin-top:8px">
+          Di Yii2, score dihitung otomatis dari Strategic Alignment, Champion, Budget, Employees, Sites, dll.
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-header">G. Notes</div>
+      <div class="card-body">
+        <textarea style="width:100%;min-height:90px;padding:8px;border:1px solid var(--border);border-radius:4px">Kebutuhan utama: onsite clinic 24/7 untuk 3 site, integrasi BPJS, dan target go-live 6 minggu.</textarea>
+        <div style="margin-top:10px;display:flex;gap:8px;justify-content:flex-end">
+          <a class="btn btn-outline" href="leads.html">Cancel</a>
+          <a class="btn btn-primary" href="pricing.html">Save & Go to Pricing</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+      <div class="footer">© 2026 ClinicOps • Prototype UI (no backend)</div>
+    </div>
+  </main>
+</div>
+</body>
+</html>
